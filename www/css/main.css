@@ -14,12 +14,14 @@ img {
   width: 100%;
   height: auto; }
 
-section {
+section,
+.footer-cta,
+footer {
   float: left;
   width: 100%;
   height: auto;
-  padding-top: 35px;
-  padding-bottom: 35px; }
+  padding-top: 92px;
+  padding-bottom: 99px; }
 
 /*CUSTOM COLUMN STRUCTURE*/
 .wrapper {
@@ -43,7 +45,7 @@ section {
 
 .col-one-third {
   float: left;
-  width: 33.3333333%; }
+  width: 30.333%; }
 
 .col-one-quarter {
   float: left;
@@ -58,13 +60,21 @@ section {
 .col-one-third {
   position: relative;
   min-height: 1px;
-  padding-left: -15px;
-  padding-right: -15px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
 /*GLOBAL CONTENT*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0; }
 
 .blue-button {
   background-color: #84dfee;
@@ -188,11 +198,100 @@ header {
 .content {
   float: left;
   width: 100%;
-  height: auto; }
+  height: auto;
+  /*END .SERVICE-BENEFITS*/
+  /*END .FOOTER-CTA*/ }
   .content .campaign-box {
     background-image: url(../images/homepage-slider-background-image.jpg);
     background-size: cover; }
     .content .campaign-box .campaign-content {
       text-align: center; }
       .content .campaign-box .campaign-content .title-large {
-        font-size: 83px; }
+        font-size: 52px; }
+      .content .campaign-box .campaign-content .description-text {
+        font-size: 37px;
+        line-height: 52px;
+        font-family: "Open Sans", sans-serif; }
+      .content .campaign-box .campaign-content .price-description {
+        font-family: "Open Sans", sans-serif;
+        font-size: 27px;
+        font-weight: normal; }
+        .content .campaign-box .campaign-content .price-description .large-price {
+          display: block;
+          text-align: center;
+          font-size: 73px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          padding-top: 15px;
+          padding-bottom: 15px; }
+  .content .campaign-box:after {
+    background-image: transparent;
+    background-color: #ffffff;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    -ms-transform-origin: 205%;
+    -webkit-transform-orgin: 205%;
+    top: 876px;
+    z-index: 9999; }
+  .content .service-benefits .benefit-box {
+    text-align: center;
+    border: 1px solid #ec303b;
+    border-radius: 5px; }
+    .content .service-benefits .benefit-box .bottom-half h3 {
+      font-size: 23px; }
+    .content .service-benefits .benefit-box .bottom-half h3:after {
+      content: '-';
+      display: block;
+      padding-top: 0px;
+      height: 0px;
+      width: 100%;
+      color: #ec303b; }
+    .content .service-benefits .benefit-box .cta-button {
+      position: relative;
+      top: 30px; }
+  .content .footer-cta {
+    background-image: url(../images/footer-slider-background-image.jpg);
+    background-size: cover;
+    text-align: center; }
+    .content .footer-cta .footer-title-large p {
+      font-size: 72px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold; }
+    .content .footer-cta .footer-title-large p.subtext {
+      font-family: "Open Sans", sans-serif;
+      font-size: 35px; }
+    .content .footer-cta .cta-buttons {
+      margin-top: 94px; }
+      .content .footer-cta .cta-buttons p {
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 52px;
+        margin-bottom: 32px; }
+  .content .footer-cta:before {
+    display: block;
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 11%;
+    left: 0;
+    right: 0;
+    transform: skewY(3.5deg);
+    transform-origin: 205%;
+    -ms-transform-origin: 205%;
+    -webkit-transform-orgin: 205%; }
+
+/*END .CONTENT*/
+footer {
+  text-align: center; }
+  footer a {
+    color: #ec303b;
+    text-transform: uppercase; }
+  footer a:hover {
+    color: #c32c35; }
