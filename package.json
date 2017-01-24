@@ -1,0 +1,18 @@
+{
+  "name": "red-ventures-design-frontier-communications-website",
+  "version": "1.0.0",
+  "description": "Red Ventures Design Project",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-responsive": "node-sass --include-path scss scss/responsive.scss css/responsive.css",
+    "watch-responsive": "nodemon -e scss -x \"npm run build-responsive\""
+  },
+  "author": "Dathan Cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "node-sass": "^4.2.0"
+  }
+}
