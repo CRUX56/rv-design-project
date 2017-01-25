@@ -1,0 +1,83 @@
+/*GLOBAL ELEMENTS*/
+
+.blue-button{
+  background-color: $frontier-blue;
+  font-family: $display-font;
+  font-weight: bold;
+  font-size: 22px;
+  color: $basic-white;
+  text-transform: uppercase;
+  width: auto;
+  height: auto;
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 3px solid $frontier-blue-offset;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+.blue-button:hover{
+  background-color: $frontier-red;
+  border-bottom: 3px solid $frontier-red-offset;
+}
+
+.red-button{
+  background-color: $frontier-red;
+  font-family: $display-font;
+  font-weight: bold;
+  font-size: 22px;
+  color: $basic-white;
+  text-transform: uppercase;
+  width: auto;
+  height: auto;
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 3px solid $frontier-red-offset;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+.red-button:hover{
+  background-color: $frontier-blue;
+  border-bottom: 3px solid $frontier-blue-offset;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}

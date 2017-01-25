@@ -1,0 +1,70 @@
+/*GLOBALS*/
+
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+section,
+.footer-cta,
+footer{
+  float: left;
+  width: 100%;
+  height: auto;
+  padding-top: 92px;
+  padding-bottom: 99px;
+}
+
+/*CUSTOM COLUMN STRUCTURE*/
+
+.wrapper{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+}
+
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-full-width{
+  width: 100%;
+  float: left;
+}
+
+.col-one-half{
+  float: left;
+  width: 50%;
+}
+
+.col-one-third{
+  float: left;
+  width: 30.333%;
+}
+
+.col-one-quarter{
+  float: left;
+  width: 16.6666666%;
+}
+
+.col-one-eight{
+  float: left;
+  width: 66.66666667%;
+}
+
+.col-full-width,
+.col-one-half,
+.col-one-third{
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

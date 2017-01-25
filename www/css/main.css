@@ -1,10 +1,13 @@
-/*IMPORTS*/
+/** PULL IN FONTS FROM FONT FILES **/
+/*IMPORT FONTS FOR GLOABL USE*/
 @import url("../fonts/Montserrat/Montserrat-Bold.ttf");
 @import url("../fonts/Montserrat/Montserrat-Regular.ttf");
 @import url("../fonts/Open_Sans/OpenSans-Bold.ttf");
 @import url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+/** PULL IN CUSTOM GLOBAL VARIABLES **/
 /*MAIN COLORS VARABLES*/
 /*SITEWIDE FONTS*/
+/** PULL IN CUSTOM COLUMN STRUCTURE **/
 /*GLOBALS*/
 body {
   margin: 0 auto;
@@ -63,6 +66,7 @@ footer {
   padding-left: 15px;
   padding-right: 15px; }
 
+/** PULL IN GLOBAL CONTENT EDITS **/
 /*GLOBAL CONTENT*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
@@ -76,6 +80,8 @@ p {
   padding-right: 10px;
   margin-bottom: 0; }
 
+/** PULL IN GLOBAL ELEMENTS EDITS **/
+/*GLOBAL ELEMENTS*/
 .blue-button {
   background-color: #84dfee;
   font-family: "Montserrat", sans-serif;
@@ -116,6 +122,51 @@ p {
   background-color: #84dfee;
   border-bottom: 3px solid #83c1cb; }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+/** PULL IN DESIGN SCSS **/
 /*HEADER*/
 header {
   width: 100%;
@@ -195,6 +246,11 @@ header {
         height: auto; }
 
 /*END HEADER SECTION*/
+header.stickytop {
+  position: fixed;
+  top: 0;
+  z-index: 9999; }
+
 .content {
   float: left;
   width: 100%;
@@ -238,8 +294,8 @@ header {
     transform-origin: 100%;
     -ms-transform-origin: 205%;
     -webkit-transform-orgin: 205%;
-    top: 876px;
-    z-index: 9999; }
+    top: 656px;
+    z-index: 9998; }
   .content .service-benefits .benefit-box {
     text-align: center;
     border: 1px solid #ec303b;
@@ -295,3 +351,5 @@ footer {
     text-transform: uppercase; }
   footer a:hover {
     color: #c32c35; }
+
+/** PULL IN THEME RESPONSIVENESS **/

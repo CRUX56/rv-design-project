@@ -100,6 +100,31 @@
 
           </div><!--END .ROW-->
 
+          <!--
+          <div class="row">
+
+            <!--MOBILE ONLY TOGGLE MENU
+
+            <div class="col-full-width">
+
+              <a href="#menu" id="toggle" onclick="toggleMenu()" class="dropdown-btn"><span>click me</span></a>
+
+              <div id="menu" class="mobile-dropdown">
+                <ul>
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">plans &amp; pricing</a></li>
+                  <li><a href="#">internet</a></li>
+                  <li><a href="#">bundles</a></li>
+                  <li><a href="#">phone</a></li>
+                </ul>
+              </div>
+
+              </div>END .COL-MOBILE-MENU
+
+            </div>END .COL-FULL-WIDTH
+
+          </div>END .ROW-->
+
         </div><!--END .WRAPPER-->
 
       </div><!--END .HEADER-MAIN-->
@@ -182,13 +207,32 @@
 
                   <a href="#">
 
-                    <button type="button" name="button" class="blue-button medium">shop plans</button>
+                    <button type="button" name="button" id="speedBtn" class="blue-button">shop plans</button>
 
                   </a>
 
                 </div><!--END .CTA-BUTTON-->
 
               </div><!--END .BENEFIT-BOX-->
+
+              <!-- The Modal -->
+              <div id="speedModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                  </div>
+                  <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                  </div>
+                </div>
+
+              </div>
 
             </div><!--END .COL-ONE-THIRD-->
 
@@ -216,13 +260,32 @@
 
                   <a href="#">
 
-                    <button type="button" name="button" class="blue-button medium">shop now</button>
+                    <button type="button" name="button" id="featureBtn" class="blue-button medium">shop now</button>
 
                   </a>
 
                 </div><!--END .CTA-BUTTON-->
 
               </div><!--END .BENEFIT-BOX-->
+
+              <!-- The Modal -->
+              <div id="featureModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                  </div>
+                  <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                  </div>
+                </div>
+
+              </div>
 
             </div><!--END .COL-ONE-THIRD-->
 
@@ -250,13 +313,32 @@
 
                   <a href="#">
 
-                    <button type="button" name="button" class="blue-button medium">order now</button>
+                    <button type="button" name="button" id="priceBtn" class="blue-button medium">order now</button>
 
                   </a>
 
                 </div><!--END .CTA-BUTTON-->
 
               </div><!--END .BENEFIT-BOX-->
+
+              <!-- The Modal -->
+              <div id="priceModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                  </div>
+                  <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                  </div>
+                </div>
+
+              </div>
 
             </div><!--END .COL-ONE-THIRD-->
 
@@ -306,7 +388,7 @@
       <footer>
 
         <p>
-          Red Ventures Design Project - <a href="http://www.crux-art.com" target="_blank">Dathan Cruz</a>
+          Red Ventures Front End Dev. Project - <a href="http://www.crux-art.com" target="_blank">Dathan Cruz</a>
         </p>
 
       </footer>
@@ -316,7 +398,7 @@
     <!--CALL JAVASCRIPT FILES-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="js/enhancements.js"></script>
   </body>
 
 </html>
