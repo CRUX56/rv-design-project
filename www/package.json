@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Red Ventures Frontend Dev Project",
   "main": "index.html",
-  "sasslintConfig": "linters/.sass-lint.yml",
+  "sasslintConfig": ".sass-lint.yml",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""

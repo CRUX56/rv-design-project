@@ -180,15 +180,15 @@ header.stickytop{
     bottom: 0;
     content: '';
     display: block;
-    height: 50%;
+    height: 57px;
     left: 0;
-    position: absolute;
+    position: relative;
     right: 0;
     transform: skewY(-1.5deg);
     transform-origin: 100%;
     -ms-transform-origin: 205%;
     -webkit-transform-orgin: 205%;
-    top: 656px;
+    top: 632px;
     z-index: 9998;
   }
 
@@ -233,6 +233,7 @@ header.stickytop{
     background-image: url(../images/footer-slider-background-image.jpg);
     background-size: cover;
     text-align: center;
+    background-attachment: fixed;
 
     .footer-title-large{
 
@@ -267,11 +268,12 @@ header.stickytop{
     display: block;
     content: '';
     background-color: #fff;
-    position: absolute;
-    height: 11%;
+    position: relative;
+    height: 67px;
+    top: 13px;
     left: 0;
     right: 0;
-    transform: skewY(3.5deg);
+    transform: skewY(2.5deg);
     transform-origin: 205%;
     -ms-transform-origin: 205%;
     -webkit-transform-orgin: 205%;
