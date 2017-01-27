@@ -95,6 +95,7 @@ header{
             color: $frontier-black;
             text-transform: uppercase;
             font-family: $normal-text;
+            transition: $lazy-hover;
           }
 
           a:hover{
@@ -128,6 +129,9 @@ header.stickytop{
   position: fixed;
   top: 0;
   z-index: 9999;
+
+  .header-main{ border-bottom: $frontier-red-border; }
+
 }
 
 .content{
@@ -197,8 +201,8 @@ header.stickytop{
     .benefit-box{
 
       text-align: center;
-      border: 1px solid $frontier-red;
-      border-radius: 5px;
+      border: $frontier-red-border;
+      border-radius: $rounded-edges;
 
       .bottom-half{
 
@@ -267,7 +271,7 @@ header.stickytop{
   .footer-cta:before{
     display: block;
     content: '';
-    background-color: #fff;
+    background-color: $basic-white;
     position: relative;
     height: 67px;
     top: 13px;

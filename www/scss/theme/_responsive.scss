@@ -1,0 +1,37 @@
+/*MEDIA QUERIES*/
+
+@media ( min-width: $breakpoint-sm-mobile) {
+
+  .wrapper{ width: 100%; }
+
+  header{
+    .top-nav-bar{
+      .phone-number{
+        float: left;
+        text-align: center;
+        ul{
+          li{
+            #phone-icon{ display: none; }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media ( min-width: $breakpoint-mobile ){
+
+}
+
+@media ( min-width: $breakpoint-sm-desktop ) {
+
+}
+
+@media ( min-width: $breakpoint-tablet ) {
+
+}
+
+@media ( min-width: $breakpoint-desktop ) {
+
+}

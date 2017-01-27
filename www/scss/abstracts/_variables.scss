@@ -3,11 +3,29 @@
 $frontier-red: #ec303b;
 $frontier-red-offset: #c32c35;
 $frontier-black: #000000;
+$frontier-black-alpha: rgba(0,0,0,0.4);
+$frontier-black-fallback: rgb(0,0,0);
 $frontier-blue: #84dfee;
 $frontier-blue-offset: #83c1cb;
 $basic-white: #ffffff;
+
+/*BORDERS*/
+
+$frontier-red-border: 1px solid #ec303b;
+$rounded-edges: 5px;
 
 /*SITEWIDE FONTS*/
 
 $display-font: 'Montserrat', sans-serif;
 $normal-text: 'Open Sans', sans-serif;
+
+/*BUTTON TRANSITIONS*/
+$lazy-hover: 0.2s all ease-in-out;
+
+/*RESPONSIVE MEDIA QUERIES*/
+
+$breakpoint-sm-mobile: 320px;
+$breakpoint-mobile: 480px;
+$breakpoint-sm-desktop: 768px;
+$breakpoint-tablet: 992px;
+$breakpoint-desktop: 1240px;
