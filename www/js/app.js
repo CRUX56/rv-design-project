@@ -15,6 +15,15 @@ $(document).ready(function(){
     });
   });
 
+  function mobileDrop() {
+    var drop = document.getElementById('myDIV');
+    if (drop.style.display === 'none') {
+      drop.style.display = 'block';
+    } else {
+      drop.style.display = 'none';
+    }
+  }
+
   //MODAL BOX FOR SPEED YOU NEED SERVICE-BOX
 
   // Get the modal for Speed

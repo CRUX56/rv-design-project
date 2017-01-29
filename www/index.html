@@ -66,7 +66,7 @@
 
             </div><!--END .COL-ONE-THIRD-->
 
-            <div class="col-one-eight">
+            <div class="col-one-eight mobile">
 
               <!--MAIN NAVIGATION-->
 
@@ -79,6 +79,8 @@
                   <li><a href="#">phone</a></li>
                 </ul>
               </nav>
+
+              <div class="toggle-btn" onclick="mobileDrop()"></div>
 
             </div><!--END .COL-ONE-THIRD-->
 
@@ -104,34 +106,23 @@
 
             <div class="col-full-width">
 
-              <button onclick="myFunction()">Click Me</button>
+              <div class="mobile-menu">
 
-<div id="myDIV">
-  <ul>
-    <li><a href="#">home</a></li>
-    <li><a href="#">plans &amp; pricing</a></li>
-    <li><a href="#">internet</a></li>
-    <li><a href="#">bundles</a></li>
-    <li><a href="#">phone</a></li>
-  </ul>
-</div>
+                <div id="dropMenu">
+                  <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">plans &amp; pricing</a></li>
+                    <li><a href="#">internet</a></li>
+                    <li><a href="#">bundles</a></li>
+                    <li><a href="#">phone</a></li>
+                  </ul>
+                </div>
 
+              </div><!--END .MOBILE-MENU-->
 
-              <script>
-              function myFunction() {
-  var x = document.getElementById('myDIV');
-  if (x.style.display === 'none') {
-      x.style.display = 'block';
-  } else {
-      x.style.display = 'none';
-  }
-}
+            </div><!-- .COL-FULL-WIDTH-->
 
-              </script>
-
-            </div>
-
-          </div>
+          </div><!--END .ROW-->
 
         </div><!--END .WRAPPER-->
 
@@ -443,6 +434,16 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/Javascript">
+      function mobileDrop() {
+        var drop = document.getElementById('dropMenu');
+        if (drop.style.display === 'none') {
+          drop.style.display = 'block';
+        } else {
+          drop.style.display = 'none';
+        }
+      }
+    </script>
   </body>
 
 </html>

@@ -107,6 +107,8 @@ header{
 
       }
 
+
+
     }/*END .MAIN NAVIGATION*/
 
     .order-now-cta{
@@ -121,9 +123,86 @@ header{
 
     }/*END .ORDER-NOW-CTA*/
 
+    /*MENU TOGGLE BTN*/
+
+    .toggle-btn{
+      float: right;
+      width: 32px;
+      height: 32px;
+      margin-top: -45px;
+      padding-top: 15px;
+      background-image: url(../images/menu-nav-toggle.png);
+      background-repeat: no-repeat;
+    }
+
   }/*END .HEADER-MAIN*/
 
+  .mobile-menu{
+
+    float: left;
+    position: relative;
+    z-index: 9999;
+    margin-top: 15px;
+    width: 100%;
+    background: $frontier-red-offset;
+    border-bottom-left-radius: $rounded-edges;
+    border-bottom-right-radius: $rounded-edges;
+
+    #dropMenu{
+
+      ul{
+        float: left;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li{
+          float: left;
+          width: 100%;
+          list-style-type: none;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          a{
+            float: left;
+            width: 99%;
+            padding: 10px 5px 5px 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $normal-text;
+            color: $basic-white;
+            transition: $lazy-hover;
+          }
+
+          a:hover{ color: $frontier-red; }
+
+        }
+
+        li:hover{ background: $basic-white; }
+
+        li:last-of-type:hover{
+          border-bottom-left-radius: $rounded-edges;
+          border-bottom-right-radius: $rounded-edges;
+        }
+
+      }
+
+    }
+
+  }/*END MOBILE-MENU*/
+
+  /*DISPLAY NONE ON DESKTOP VIEW*/
+
+  .toggle-btn{
+    display: none;
+  }
+
+  #dropMenu{ display: none; }
+
 }/*END HEADER SECTION*/
+
+/*STICKY HEADER*/
 
 header.stickytop{
   position: fixed;

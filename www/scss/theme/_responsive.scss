@@ -2,17 +2,115 @@
 
 @media ( min-width: $breakpoint-sm-mobile) {
 
-  .wrapper{ width: 100%; }
+  .wrapper{ width: 270px; }
+
+  .col-one-eight.mobile{
+    width: 49%;
+
+    nav.main-navigation{ display: none; }
+
+   }
+
+  .col-one-quarter{ width: 49%; }
 
   header{
     .top-nav-bar{
+      height: 60px;
       .phone-number{
         float: left;
         text-align: center;
+        width: 100%;
         ul{
+          float: left;
+          width: 100%;
+          margin-top: 12px;
           li{
+            float: left;
+            width: 100%;
             #phone-icon{ display: none; }
+            a{ font-size: 25px; }
           }
+        }
+      }
+    }/*END .TOP-NAV-BAR*/
+
+    .header-main{
+      height: 130px;
+      .logo{
+        img{
+          width: 140px;
+          height: 60px;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      .toggle-btn{
+        margin-top: 18px;
+        margin-bottom: 18px;
+        padding-top: 0;
+
+      }
+    }/*END HEADER-MAIN*/
+
+    .col-one-quarter:last-of-type{
+      width: 100%;
+    }
+
+    .order-now-cta{
+      float: left;
+      width: 100%;
+      text-align: center;
+      button{
+        font-size: 16px;
+        padding: 5px;
+      }
+    }
+
+    .toggle-btn{ display: block; }
+
+    .mobile-menu{ margin-top: 15px; }
+
+  }/*END HEADER*/
+
+  /*CONTENT*/
+
+  .col-one-half,
+  .col-one-third{
+    width: 100%;
+  }
+
+  .content{
+
+    .service-benefits{
+      .benefit-box{
+        margin-top: 5px;
+        margin-bottom: 45px;
+      }
+    }
+
+    .footer-cta{
+      .footer-title-large{
+        p{ line-height: 70px; }
+      }
+    }
+
+    .campaign-box:after,
+    .footer-cta:before{
+      display: none;
+     }
+
+  }/*END .CONTENT*/
+
+  .modal{
+
+    .modal-content{
+      margin: 0% auto;
+      padding: 15px;
+      .modal-header{ font-size: 15px; }
+      .modal-body{
+        p{
+          font-size: 15px;
+          line-height: 25px;
         }
       }
     }
@@ -22,16 +120,129 @@
 
 @media ( min-width: $breakpoint-mobile ){
 
+  .wrapper{ width: 445px; }
+
 }
 
 @media ( min-width: $breakpoint-sm-desktop ) {
+
+  .wrapper{ width: 715px; }
 
 }
 
 @media ( min-width: $breakpoint-tablet ) {
 
+  .wrapper{ width: 955px; }
+
+  .col-one-quarter{ width: 25%; }
+
+  header{
+    .top-nav-bar{
+      height: 74px;
+      .phone-number{
+        float: right;
+        text-align: right;
+        width: auto;
+        ul{
+          li{
+            #phone-icon{ display: block; }
+            a{ font-size: 34px; }
+          }
+        }
+      }
+    }/*.TOP-BAR-NAV*/
+    .header-main{
+      height: 90px;
+      .logo{
+        img{
+          width: 160px;
+          height: 73px;
+        }
+      }
+      .col-one-eight.mobile{
+        nav.main-navigation{ display: block; }
+      }
+      nav.main-navigation{
+        ul{
+          li{
+            padding-left: 7px;
+            padding-right: 10px;
+          }
+        }
+      }
+      .toggle-btn{ display: none; }
+    }
+    .col-one-quarter:last-of-type{ width: 25%; }
+    .order-now-cta{
+      button{
+        font-size: 22px;
+        padding: 15px 20px;
+      }
+    }
+  }/*END HEADER*/
+
+  .col-one-half{ width: 50%; }
+  .col-one-third{
+    width: 30.333%;
+    padding-left: 14px;
+    padding-right: 14px;
+   }
+
+   .modal{
+     .modal-content{
+       margin: 15% auto;
+       padding: 15px;
+       .modal-header{ font-size: 28px; }
+       .modal-body{
+         p{
+           line-height: 35px;
+         }
+       }
+     }
+   }
+
 }
 
 @media ( min-width: $breakpoint-desktop ) {
+  .wrapper{ width: 1170px; }
 
+  .col-one-quarter{ width: 16.666666%; }
+
+  .col-one-eight,
+  .col-one-eight.mobile{
+    width: 66.66666667%;
+  }
+
+  header{
+    .col-one-quarter:last-of-type{ width: 16.666666%; }
+    .header-main{
+      .logo{
+        img{
+          width: 200px;
+          height: 84px;
+        }
+      }
+      nav.main-navigation{
+        ul{
+          li{
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }/*END HEADER*/
+
+  .content{
+    .campaign-box:after,
+    .footer-cta:before{
+      display: block;
+     }
+    .footer-cta:before{
+      top: 3px;
+      height: 67px;
+      transform: skewY(3deg);
+      transform-origin: 247%;
+    }
+  }/*END .CONTENT*/
 }
