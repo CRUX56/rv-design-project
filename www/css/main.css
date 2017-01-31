@@ -558,3 +558,11 @@ footer {
     transform: skewY(3deg);
     transform-origin: 247%; }
   /*END .CONTENT*/ }
+
+@media (min-width: 1500px) {
+  .content .campaign-box:after {
+    height: 60px; }
+  .content .footer-cta:before {
+    top: 24px;
+    height: 86px;
+    transform: skewY(2.5deg); } }

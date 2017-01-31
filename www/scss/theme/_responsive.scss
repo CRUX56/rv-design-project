@@ -246,3 +246,16 @@
     }
   }/*END .CONTENT*/
 }
+
+@media ( min-width: $breakpoint-large-desktop ) {
+  .content{
+    .campaign-box:after{
+      height: 60px;
+    }
+    .footer-cta:before{
+      top: 24px;
+      height: 86px;
+      transform: skewY(2.5deg);
+    }
+  }
+}
